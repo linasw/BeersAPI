@@ -146,7 +146,7 @@ namespace BeersAPI.Controllers
             return NotFound();
         }
 
-        [HttpPut("{beerId}")]
+        [HttpPut("{beerId}/increase")]
         public async Task<IActionResult> Put(string beerId)
         {
             if (Guid.TryParse(beerId, out Guid id))
